@@ -1,0 +1,26 @@
+name: Pull Request Check
+
+on:
+  pull_request:
+    branches:
+      - main # Target branch to which PR will be made
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+        
+      # Your build and test commands here, example given below
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Run Tests
+        run: npm test
+
