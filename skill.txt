@@ -7,3 +7,4 @@ Splunk
 AI
 Grafana
 Jenkins
+SQL
