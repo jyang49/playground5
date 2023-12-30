@@ -8,3 +8,4 @@ AI
 Grafana
 Jenkins
 SQL
+Terraform
